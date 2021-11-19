@@ -52,7 +52,7 @@ convertID();
 
 m.get("hour");
 
-console.log(m.format("h"));
+console.log(m.format("HH"));
 
 
 

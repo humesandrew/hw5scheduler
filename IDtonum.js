@@ -1,16 +1,29 @@
-var num = document.getElementById("13");
-
-
+var num = document.getElementById("14");
 var numTwoDigit = num.textContent[0] + num.textContent[1];
-
 var number = parseInt(numTwoDigit, 10);
 
+// function colorCurrent() {
+//   if (m.get("hour") === number) {
+//     $("#14").css("background-color", "green");
+//   }
+//   else { 
+//       colorPast();
+     
+//   }
+// };
 
-function colorCurrent() {
-    if (m.get("hour") === number)
-    {
-        $("#13").css("background-color", "green");
-    }
+
+function colorPast() {
+    if (currentHour === number) {
+        console.log("Correct");
+  $("#15").css("background-color", "green");
 }
+else if (currentHour !== number) {
+    console.log("Shit")
+    $("#14").css("background-color", "red");
+};
+};
 
-colorCurrent();
+
+colorPast();
+// colorCurrent();
