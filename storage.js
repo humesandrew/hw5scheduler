@@ -45,9 +45,9 @@
 
 myArr = [];
 
+localStorage.setItem("Time", JSON.stringify(myArr));
 
-
-  const eight = $(".primary").click(function() {
+  const commitButton = $(".primary").click(function() {
     var inputEl = $(".form-horizontal").val();
 
     console.log(inputEl)
@@ -56,5 +56,8 @@ myArr = [];
 myArr.push(inputEl);
 
   });
+
   
-  localStorage.setItem("Input", myArr);
+  
+  
+  
