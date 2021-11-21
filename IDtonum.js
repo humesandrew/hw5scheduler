@@ -1,16 +1,28 @@
+
+
+
+
+const allCards = $(".container").each(function(index) {
+
+  
+//   parseInt($(this).text(), 10);
+  console.log($(this).children().eq(0).text());
+
+
+
+//   .text(parseInt($(this).text(), 10));
+});
+
+
+
+
+
+
 var num = document.getElementById("14");
 var numTwoDigit = num.textContent[0] + num.textContent[1];
 var number = parseInt(numTwoDigit, 10);
 
-// function colorCurrent() {
-//   if (m.get("hour") === number) {
-//     $("#14").css("background-color", "green");
-//   }
-//   else { 
-//       colorPast();
-     
-//   }
-// };
+
 
 
 function colorPast() {
@@ -26,4 +38,15 @@ else if (currentHour !== number) {
 
 
 colorPast();
+
+
+// function colorCurrent() {
+//   if (m.get("hour") === number) {
+//     $("#14").css("background-color", "green");
+//   }
+//   else { 
+//       colorPast();
+     
+//   }
+// };
 // colorCurrent();
