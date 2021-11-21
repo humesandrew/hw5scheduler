@@ -28,16 +28,33 @@
 //   console.log("saved");
 
 // }
+//
+// const inputEl = $(".primary");
+// $.each(inputEl, bob);
+// 
 
-const inputEl = $(".primary");
-$.each(inputEl, bob);
+// var saved = [];
+
+// function bob() { $(".primary").click(function(){
+//   var input = $(".form-horizontal").val();
+// console.log("saved");
+// localStorage.setItem("Input", input);
+// event.preventDefault;
+// })};//
 
 
-var saved = [];
+myArr = [];
 
-function bob() { $(".primary").click(function(){
-  var input = $(".form-horizontal").val();
-console.log("saved");
+
+
+  const eight = $(".primary").click(function() {
+    var inputEl = $(".form-horizontal").val();
+
+    console.log(inputEl)
+    console.log("Hello");
+
+myArr.push(inputEl);
+
+  });
   
-localStorage.setItem("Input", input);
-})};
+  localStorage.setItem("Input", myArr);
