@@ -28,37 +28,61 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
+  <div class="container">
       <!-- Timeblocks go here -->
-      <div class="card" id="8">08      <input class="form-horizontal">
-        <button class="primary" type="button">Commit</button>
+      <div class="row blockTime" id="hour-8">
+        <div class="col-md-1 hour">
+        08
+        </div>
+        <textarea class="col-md-10 textItem"> </textarea>  
+        <button class="btn saveBtn col-md-1">Commit</button>
+      </div>
 
-      <div class="card" id="9">09       <input class="form-horizontal" >
+      <div class="row blockTime" id="hour-9">
+        <div class="col-md-1 hour">
+        09
+        </div>
+        <textarea class="col-md-10 textItem"> </textarea>  
+        <button class="btn saveBtn col-md-1">Commit</button>
+      </div>
+
+      <div class="row blockTime" id="hour-10">
+        <div class="col-md-1 hour">
+        10
+        </div>
+        <textarea class="col-md-10 textItem"> </textarea>  
+        <button class="btn saveBtn col-md-1">Commit</button>
+      </div>
+
+<!--         
+      <div class="card" id="hour-9">09       <input class="form-horizontal" >
         <button class="primary" type="button">Commit</button></div>
 
-      <div class="card" id="10">10      <input class="form-horizontal" >
+      <div class="card" id="hour-10">10      <input class="form-horizontal" >
         <button class="primary" type="button">Commit</button></div>
 
-      <div class="card" id="11">11     <input class="form-horizontal" >
+      <div class="card" id="hour-11">11     <input class="form-horizontal" >
         <button class="primary" type="button">Commit</button></div>
 
-      <div class="card" id="12">12       <input class="form-horizontal">
+      <div class="card" id="hour-12">12       <input class="form-horizontal">
         <button class="primary" type="button">Commit</button></div>
 
-      <div class="card" id="13" value="13">13      <input class="form-horizontal">
+      <div class="card" id="hour-13" value="13">13      <input class="form-horizontal">
         <button class="primary" type="button" id="btn8">Commit</button></div>
 
-      <div class="card" id="14" value="14">14       <input class="form-horizontal">
+      <div class="card" id="hour-14" value="14">14       <input class="form-horizontal">
         <button class="primary" type="button">Commit</button></div>
 
-      <div class="card" id="15">15    <input class="form-horizontal">
+      <div class="card" id="hour-15">15    <input class="form-horizontal">
         <button class="primary" type="button">Commit</button></div>
         
-      <div class="card" id="16">16      <input class="form-horizontal" >
+      <div class="card" id="hour-16">16      <input class="form-horizontal" >
         <button class="primary" type="button">Commit</button></div>
   
-      
-      
+        <div class="card" id="23">23     <input class="form-horizontal" >
+          <button class="primary" type="button">Commit</button></div>
+    
+       -->
       
       </div>
     </div>
@@ -68,7 +92,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
-    <script src="IDtonum.js"></script>
-    <script src="storage.js"></script>
+    
+    
+    <script src="alltocolor.js"></script>
   </body>
 </html>

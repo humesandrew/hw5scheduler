@@ -43,21 +43,52 @@
 // })};//
 
 
-myArr = [];
+$(document).ready(function() {
 
-localStorage.setItem("Time", JSON.stringify(myArr));
+$(".saveBtn").on("click", function () {
+  var value = $(this).siblings(".textItem").val();
+  var time = $(this).parent().attr("id");
+  localStorage.setItem(time, value);
+});
 
-  const commitButton = $(".primary").click(function() {
-    var inputEl = $(".form-horizontal").val();
 
-    console.log(inputEl)
-    console.log("Hello");
 
-myArr.push(inputEl);
 
-  });
 
-  
-  
+})
+
+
+
+
+
+
+// var myArr = [];
+
+// localStorage.setItem("Time", JSON.stringify(myArr));
+
+// function getButtons() {
+//   const commitButton = $(".primary").click(function() {
+//     var inputEl = $(".form-horizontal").val();
+//     console.log(inputEl)
+//     console.log("Hello");
+// myArr.push(inputEl);
+//   })};
+
+
+//   //trying to add this to each separate commit button//
+
+
+
+
+
+// const eight = $(".primary").click(function() {
+//   var inputEl = $(".form-horizontal").val();
+
+//   console.log(inputEl)
+//   console.log("Hello");
+
+// myArr.push(inputEl);
+
+// });
   
   
