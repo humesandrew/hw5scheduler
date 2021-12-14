@@ -25,37 +25,32 @@ $("#currentDay").text("Today is: " + moment().format("Do MMM YYYY"));
 });
 
 
-console.log($(".hour").val());
+// each .hour get textContent , save as hourContent
+// if hour content < moment background-color red 
+
+$( ".hour" ).each(function(i) {
+var momentNumber  = parseInt(moment().format("HH"));
+var hourNumber = parseInt(this.textContent);
+
+if (momentNumber < hourNumber) {
+  $(this).css("background-color", "green")
+}
+
+else if (momentNumber > hourNumber) {
+  $(this).css("background-color", "red")
+}
+
+else if (momentNumber === hourNumber) {
+  $(this).css("background-color", "yellow")
+}
+
+});
 
 
 
 
 
 
-//working on converting each slot to a number to compare to moment//
-// $(".textItem").css("background-color", "red");
-
-// function renderColor() {
-//   if ( ".hour" == NaN) {
-//     $(".textItem").css("background-color", "green")
-
-//   }
-//   }
-
-
-
-// function updateHour() {
-//   var currentHour = moment().hours();
-//   $(".blockTime").each(function() {
-//   var hourBlock = parseInt($(this).attr("id").split("-")[1]);
-// if (hourBlock > moment().hours()) {
-// $(".blockTime").css("background-color: red");
-// }
-//   })
-// }
-
-// updateHour();
-// var interval = setInterval(updateHour, 15000);
 
 
 
